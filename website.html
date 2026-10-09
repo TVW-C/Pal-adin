@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BikeTrack – Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for the Pal-adin mobile application." />
+    <style>
+      :root { color-scheme: light dark; }
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+      header { background: #0b6a3c; color: #fff; padding: 24px; }
+      main { max-width: 880px; padding: 24px; margin: 0 auto; }
+      h1 { margin: 0 0 8px 0; font-size: 28px; }
+      h2 { margin-top: 32px; font-size: 22px; }
+      p { margin: 12px 0; }
+      ul { margin: 8px 0 16px 24px; }
+      code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .muted { opacity: .8; font-size: 14px; }
+      a { color: #0b6a3c; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>BikeTrack – Privacy Policy</h1>
+      <div class="muted">Effective date: <span id="effective-date"></span></div>
+    </header>
+    <main>
+      <p>
+        This Privacy Policy explains how the app BikeTrack handles information. BikeTrack is designed with a local‑first approach: your ride
+        sessions and user data are stored on your device by default and the App works offline. Optional cloud features use Google Firebase.
+      </p>
+
+      <h2>Summary</h2>
+      <ul>
+        <li><strong>Local‑first</strong>: Core data (sessions, user info) is stored in a local SQLite database on your device.</li>
+        <li><strong>Optional cloud</strong>: If you enable sync or leaderboard features, data may be sent to Firebase (Firestore/Storage/Auth).</li>
+        <li><strong>No sale of data</strong>: We do not sell your personal information.</li>
+        <li><strong>Security</strong>: We use Firebase App Check and Firestore Security Rules to protect backend resources.</li>
+        <li><strong>Control</strong>: You can keep data local, remove the App to delete local data, and contact us to delete cloud data.</li>
+      </ul>
+
+      <h2>Information We Handle</h2>
+      <p><strong>On your device (offline by default)</strong></p>
+      <ul>
+        <li>Ride sessions, statistics, and user profile data stored in SQLite.</li>
+        <li>Preferences and UI settings stored via SharedPreferences.</li>
+        <li>NFC card identifiers and related session data for your bike sessions.</li>
+      </ul>
+      <p><strong>Sent to Firebase (only if you use cloud features)</strong></p>
+      <ul>
+        <li>Basic user identifiers (e.g., user ID, display name) to enable sync and leaderboard.</li>
+        <li>Aggregated session data (e.g., totals, counts) necessary to show rankings or restore data across devices.</li>
+        <li>Authentication tokens (e.g., anonymous sign‑in) to securely access your data.</li>
+      </ul>
+      <p>
+        <em>Location</em>: This version of the App does not collect precise location. Network status may be read to optimize connectivity
+        (e.g., online/offline detection).
+      </p>
+
+      <h2>How We Use Information</h2>
+      <ul>
+        <li>Provide and improve core features (session tracking, visualization).</li>
+        <li>Enable optional sync and leaderboard functionality via Firebase.</li>
+        <li>Maintain security (App Check) and prevent abuse.</li>
+      </ul>
+
+      <h2>Sharing and Disclosure</h2>
+      <ul>
+        <li>We do not sell your personal information.</li>
+        <li>We may share data with service providers (e.g., Google Firebase) solely to operate the App.</li>
+        <li>We may disclose information if required by law or to protect our rights and users.</li>
+      </ul>
+
+      <h2>Data Retention</h2>
+      <ul>
+        <li><strong>Local data</strong>: Remains on your device until you delete it or uninstall the App. Some apps provide an in‑app reset; otherwise uninstalling removes local data.</li>
+        <li><strong>Cloud data</strong>: Retained while your account exists or until you request deletion.</li>
+      </ul>
+
+      <h2>Security</h2>
+      <ul>
+        <li>Transport encryption (HTTPS) for data sent to Firebase.</li>
+        <li>Firebase App Check (Play Integrity on Android, platform‑specific on iOS) to help block abusive traffic.</li>
+        <li>Firebase Security Rules restrict access to authorized users.</li>
+      </ul>
+
+      <h2>Your Choices</h2>
+      <ul>
+        <li>Use the App offline and keep data local.</li>
+        <li>Request deletion of your cloud‑stored data by contacting us (see Contact).</li>
+      </ul>
+
+      <h2>Children’s Privacy</h2>
+      <p>The App is not directed to children under 13. If you believe we have collected data from a child, contact us to request deletion.</p>
+
+      <h2>International Transfers</h2>
+      <p>Firebase may process data on servers outside your country. We rely on their safeguards as described in Google’s documentation.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Policy. Material changes will be posted on this page with a new effective date.</p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions or requests (including data deletion)? Email us at <strong>tobyvanwaale@gmail.com</strong>.
+      </p>
+
+      <hr />
+      <p class="muted">
+        Third‑party services used: Google Firebase (Authentication, Firestore, Storage, Analytics). See Google’s privacy documentation for details.
+      </p>
+    </main>
+    <script>
+      // Set effective date to today by default
+      const d = new Date();
+      const iso = d.toISOString().slice(0,10);
+      document.getElementById('effective-date').textContent = iso;
+    </script>
+  </body>
+  </html>
+
+
